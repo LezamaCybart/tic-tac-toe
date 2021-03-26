@@ -198,20 +198,3 @@ const DisplayActions = (() => {
 
 })();
 
-
-
-
-//DONE
-//variables de display 
-//acciones de display 
-//logica que controla quien gana 
-//block grid when game is over 
-//take care of player o actions
-//check for ties
-
-
-//TODO
-//add style
-
-
-
