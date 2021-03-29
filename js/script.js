@@ -1,12 +1,11 @@
-const Player = (mark) => {
-
-    return {
-        mark
-    };
+const Player = class {
+    constructor(mark) {
+        this.mark = mark;
+    }
 }
 
-let playerX = Player("X");
-let playerO = Player("O");
+let playerX = new Player("X");
+let playerO = new Player("O");
 
 const GameFlow = (() => {
     let currentTurn = playerX;
@@ -92,7 +91,6 @@ const GameFlow = (() => {
             }
         }
         turnCounter++;
-        console.log(turnCounter);
         if (turnCounter == 10) {
             DisplayActions.informTie();
             DisplayActions.blockGrid();
